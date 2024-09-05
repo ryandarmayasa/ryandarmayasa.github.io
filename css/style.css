@@ -51,6 +51,7 @@ body{
 	font-weight: 300;
 }
 .home-button {
+	margin: 30px auto;
     background-color: #4A6EF6; 
     color: white;
     padding: 10px 20px; 
@@ -81,10 +82,6 @@ body{
 	
 	.home h1{
 		font-size: 49px;
-	}
-	.home p{
-		color: #000;
-		font-size: 15px;
 	}
 	.home-button {
 		background-color: #4A6EF6; 
@@ -142,6 +139,18 @@ body{
 	color: #030303 !important;
 }
 
+.navbar-toggler.logo img {
+    content: url('../image/icon/lines2.png'); 
+	width: 20px; /* Ukuran default sebelum scroll */
+    height: auto; /
+}
+
+/* Logo setelah scroll */
+.navbar.scrolled .navbar-toggler.logo img {
+    content: url('../image/icon/lines.png'); 
+	width: 20px; /* Ukuran default sebelum scroll */
+    height: auto; /
+}
 
 /* judul diri */
 .judul-diri h1 {
@@ -155,7 +164,7 @@ body{
 @media screen and (max-width: 900px) {
     .judul-diri h1 {
         margin-bottom: 30px;
-        font-size: 42px;
+        font-size: 35px;
         text-align: center;
     } 
 }
@@ -166,24 +175,32 @@ body{
 	padding-top: 80px;
 	padding-bottom: 80px;
 }
+.about-image {
+	width: 200px;
+	/* height: 50px; */
+}
 
 .judul-about {
 	color: #303030;
 	margin-bottom: 30px;
+}
+.judul-about2 h1{
+	color: #303030;
+	font-size: 24px;
+	margin-bottom: 20px;
 }
 .about {
 	color: #333;
 	line-height: 1.7;
 	margin-bottom: 30px;
 }
+
 .judul-about h1 {
 	font-size: 40px;
 }
-p {
-	font-size: 17px;
-}
+
 p.bio-about {
-	font-size: 20px;
+	font-size: 18px;
 }
 .foto-profil {
     padding: auto 0;
@@ -252,7 +269,7 @@ p.bio-about {
 
 /* grup */
 .bg-group {
-	margin-bottom: 20vh; 
+	margin-bottom: 5vh; 
 }
 
 
@@ -267,9 +284,9 @@ p.bio-about {
 }
 
 @media screen and (max-width: 992px) {
-	.bg-produk{
-		padding-top: 30vh; 
-		background-color: #fff;
+	.bg-group h1 {
+		font-size: 35px;
+		margin-bottom: 20px;
 	}
 }
 
@@ -291,12 +308,6 @@ p.bio-about {
 	object-fit: cover;
   }
 
-  .profile-image2 {
-	width: 100px;
-	height: 100px;
-	border-radius: 50%;
-	object-fit: cover;
-  }
 
   .profile-name {
 	font-weight: bold;
@@ -315,18 +326,55 @@ p.bio-about {
 	color: #6c757d;
   }
 
-  .icon-instagram {
-	background-color: #f5f6fa;
-	padding: 10px;
-	border-radius: 50%;
-	color: #0d1a5b;
-	font-size: 16px;
-  }
+@media screen and (max-width: 992px) {
+	.profile-image {
+		width: 100px;
+		height: 100px;
+		border-radius: 50%;
+		object-fit: cover;
+	  }
+	
+	
+	  .profile-name {
+		font-weight: bold;
+		font-size: 19px;
+		color: #4285F4;
+	  }
+	
+	  .profile-position {
+		font-size: 14px;
+		color: #6c757d;
+		font-weight: 400;
+	  }
+	
+	  .profile-desc {
+		font-size: 13px;
+		color: #6c757d;
+	  }
+
+}
+
+
 /* endgroup */
 
 
 
 /* kegiatan */
+.bg-kegiatan h1 {
+	color: #333;
+	margin-bottom: 50px;
+	font-weight: 250;
+	font-size: 80px;
+	font-weight: 500;
+	text-align: center;
+}
+
+@media screen and (max-width: 992px) {
+	.bg-kegiatan h1 {
+		font-size: 35px;
+		margin-bottom: 50px;
+	}
+}
 
 .card-event {
 	border: none;
