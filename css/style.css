@@ -326,6 +326,7 @@ p.bio-about {
 	border-radius: 10px;
 	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 	transition: transform 0.2s;
+	margin-bottom: 20px;
   }
 
   .card-event:hover {
@@ -343,14 +344,14 @@ p.bio-about {
   .event-date {
 	font-size: 12px;
 	color: #6c757d;
-	margin-top: 10px;
+	margin-top: 0px;
   }
 
   .event-title {
-	font-size: 16px;
+	font-size: 17px;
 	font-weight: bold;
-	color: #0d1a5b;
-	margin-top: 5px;
+	color: #030303;
+	margin-top: 3px;
   }
 
 

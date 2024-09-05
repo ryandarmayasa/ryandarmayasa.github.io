@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Magang Blog</title>
+    <title>Blog Magang </title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -29,7 +29,7 @@
                             <a class="nav-link active" href="#about">About</a>
                         </li>
                         <li class="nav-item px-3">
-                            <a class="nav-link active" href="#group">group</a>
+                            <a class="nav-link active" href="#group">Group</a>
                         </li>
                         <li class="nav-item px-3">
                             <a class="nav-link active" href="#kegiatan">Kegiatan</a>
@@ -173,21 +173,21 @@
 
         <section class="bg-group" id="kegiatan">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 d-flex justify-content-center" data-aos="fade-in" data-aos-duration="3000">
-                        <h1>Kegiatan</h1>
-                    </div>
-                    <!-- Cards akan di-render secara dinamis di sini -->
-                    <div id="events" class="row">
-                        <!-- Card akan dimasukkan secara dinamis dengan JavaScript -->
-                    </div>
+                
+                <div class="col-lg-12 d-flex justify-content-center" data-aos="fade-in" data-aos-duration="3000">
+                    <h1>Kegiatan</h1>
                 </div>
+                <!-- Cards akan di-render secara dinamis di sini -->
+                <div id="events" class="row">
+                    <!-- Card akan dimasukkan secara dinamis dengan JavaScript -->
+                </div>
+                
             </div>
         </section>
         
         
         <section class="footer">
-            <div class="text-center p-4" style="background-color: #354E75; color: #fff;">
+            <div class="text-center p-4" style="background-color: #FFFF; color: #030303;">
                 <p class="text-reset ">©2024 Copyright: <strong>Putu Ryan Darmayasa</strong> </p>
             </div>
         </section>
@@ -223,7 +223,7 @@
         {
             date: '26 Agustus 2024',
             title: 'Perkenalan Tempat Kerja',
-            imageUrl: 'https://via.placeholder.com/400x200',
+            imageUrl: 'image/kegiatan/perkenalan.jpg',
             detailUrl: 'detail-kegiatan.html?event=1'
         },
         {
@@ -241,15 +241,15 @@
 
         // Loop melalui data kegiatan
         kegiatanData.forEach(event => {
-            // Buat div card
+            // Buat div card d-flex flex-row align-items-center
             const card = document.createElement('div');
-            card.classList.add('col-lg-3');
-            card.setAttribute('data-aos', 'fade-right');
+            card.classList.add('col-lg-3', 'col-12' );
+            card.setAttribute('data-aos', 'fade-in');
 
             // Isi card dengan konten HTML
             card.innerHTML = `
-                <a href="${event.detailUrl}" class="text-decoration-none">
-                    <div class="card card-event">
+                <a href="${event.detailUrl}" class="text-decoration-none ">
+                    <div class="card card-event ">
                         <img src="${event.imageUrl}" alt="Event Image" class="event-image">
                         <div class="card-body">
                             <p class="event-date">${event.date}</p>
